@@ -1,4 +1,13 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Ignorar la carpeta node_modules
+node_modules/
+
+# Ignorar archivos de configuración específicos
+.env
+.DS_Store
+npm-debug.log
+
+
 
 # dependencies
 /node_modules

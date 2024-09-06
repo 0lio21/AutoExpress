@@ -1,1 +1,7 @@
-/node_modules
+# Ignorar la carpeta node_modules
+node_modules/
+
+# Ignorar archivos de configuración específicos
+.env
+.DS_Store
+npm-debug.log
