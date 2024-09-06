@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "make": "Toyota",
+        "model": "Camry",
+        "year": 2022,
+        "price": 25000,
+        "image": "https://example.com/toyota-camry.jpg"
+    },
+    {
+        "id": 2,
+        "make": "Honda",
+        "model": "Civic",
+        "year": 2021,
+        "price": 22000,
+        "image": "https://imgs.search.brave.com/HpmWJDfyhre3EK2xznz8HndeyVGvAyWJFeV7fF7bsnA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdj/ZG4ub3RvLmNvbS5z/Zy9sYXJnZS9nYWxs/ZXJ5L2NvbG9yLzIv/MjQvaG9uZGEtY2l2/aWMtY29sb3ItMjMw/MjM1LmpwZw.webp"
+    },
+    {
+        "id": 3,
+        "make": "Toyota",
+        "model": "Camry",
+        "year": 2022,
+        "price": 25000,
+        "image": "https://example.com/toyota-camry.jpg"
+    },
+    {
+        "id": 4,
+        "make": "Honda",
+        "model": "Civic",
+        "year": 2021,
+        "price": 22000,
+        "image": "2_honda_civic.webp"
+    },
+    {
+        "id": 5,
+        "make": "Toyota",
+        "model": "Camry",
+        "year": 2022,
+        "price": 25000,
+        "image": "https://example.com/toyota-camry.jpg"
+    },
+    {
+        "id": 6,
+        "make": "Honda",
+        "model": "Civic",
+        "year": 2021,
+        "price": 22000,
+        "image": "2_honda_civic.webp"
+    },
+    {
+        "id": 1,
+        "make": "Toyota",
+        "model": "Camry",
+        "year": 2022,
+        "price": 25000,
+        "image": "https://example.com/toyota-camry.jpg"
+    },
+    {
+        "id": 2,
+        "make": "Honda",
+        "model": "Civic",
+        "year": 2021,
+        "price": 22000,
+        "image": "2_honda_civic.webp"
+    },
+    {
+        "id": 3,
+        "make": "Toyota",
+        "model": "Camry",
+        "year": 2022,
+        "price": 25000,
+        "image": "https://example.com/toyota-camry.jpg"
+    },
+    {
+        "id": 4,
+        "make": "Honda",
+        "model": "Civic",
+        "year": 2021,
+        "price": 22000,
+        "image": "2_honda_civic.webp"
+    },
+    {
+        "id": 5,
+        "make": "Toyota",
+        "model": "Camry",
+        "year": 2022,
+        "price": 25000,
+        "image": "https://example.com/toyota-camry.jpg"
+    },
+    {
+        "id": 6,
+        "make": "Honda",
+        "model": "Civic",
+        "year": 2021,
+        "price": 22000,
+        "image": "2_honda_civic.webp"
+    }
+]

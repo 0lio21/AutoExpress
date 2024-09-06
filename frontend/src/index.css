@@ -1,0 +1,160 @@
+/* General header styles */
+.header-container {
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo h1 {
+  font-size: 28px;
+  color: #ffffff;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #f39c12;
+}
+
+/* Navigation actions */
+.nav-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-quote {
+  padding: 10px 20px;
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-quote:hover {
+  background-color: #e6b800;
+}
+
+/* Sección de contacto */
+.contact-info {
+  background-color: #333333;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  color: #ffcc00;
+  margin-top: 40px; /* Espacio entre el carrusel y la sección de contacto */
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.contact-info a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Carrusel de autos */
+.car-slider {
+  display: flex;
+  justify-content: center; /* Centrar el carrusel */
+  align-items: center;
+  position: relative;
+  padding: 60px 0; /* Espacio arriba y abajo del carrusel */
+  margin: 0 auto;
+  max-width: 90%; /* Evitar que ocupe todo el ancho de la pantalla */
+}
+
+.car-list {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto; /* Desplazamiento horizontal */
+  scroll-behavior: smooth;
+  gap: 20px;
+}
+
+/* Tarjetas de autos */
+.car-card {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  width: 250px; /* Ajustar tamaño para mejor visualización */
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 15px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.car-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(152, 23, 23, 0.2);
+}
+
+.car-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Botones de scroll */
+.scroll-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.scroll-button.left {
+  left: 10px;
+}
+
+.scroll-button.right {
+  right: 10px;
+}
+
+.scroll-button:hover {
+  background-color: #555;
+}
