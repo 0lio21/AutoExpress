@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import Header from './components/Header';
 import CarList from './components/CarList';
 import NewsCarousel from './components/NewsCarousel'; // Importa el carrusel de noticias
-import FilterAccordion from './components/FilterAccordion';
+import FilterAccordion from './components/FilterAccordion'; // Importa el acordeón de búsqueda
+import HeroSection from './components/HeroSection'; // Importa la nueva sección Hero
 
 const App = () => {
     // Estado para capturar el término de búsqueda
@@ -18,6 +19,8 @@ const App = () => {
         <div className="App">
             <Header />
             <main>
+                
+                
                 {/* Barra de búsqueda */}
                 <div className="search-container">
                     <form className="search-bar" onSubmit={handleSearch}>
@@ -34,12 +37,14 @@ const App = () => {
                 {/* Lista de autos */}
                 <h1>Lista de Autos</h1>
                 <CarList searchTerm={searchTerm} />
-
+{/* Sección Hero */}
+<HeroSection /> {/* Aquí se muestra la nueva sección hero */}
                 {/* Carrusel de noticias */}
                 <h1>Noticias Recientes</h1>
                 <NewsCarousel /> {/* Aquí se muestra el carrusel de noticias */}
 
-                
+                {/* Acordeón de búsqueda */}
+                <FilterAccordion />  {/* Aquí se muestra el acordeón de búsqueda */}
             </main>
 
             {/* Footer con más contenido y enlaces sociales */}
