@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Header = () => {
+    const [searchTerm, setSearchTerm] = useState('');
+
+    const handleSearch = (event) => {
+        event.preventDefault();
+        // Aquí puedes manejar la lógica de búsqueda
+        console.log('Buscando:', searchTerm);
+    }
+
     return (
         <header className="header-container">
             <nav className="navbar">
@@ -14,18 +22,13 @@ const Header = () => {
                     <li><a href="/financiamiento">Financiamiento</a></li>
                 </ul>
                 <div className="nav-actions">
+                    
                     <button className="btn-quote">💬 Cotiza tu auto</button>
+                    <button className="btn-login">Iniciar Sesión</button>
                 </div>
             </nav>
-            {/* Sección de información de contacto */}
-            <div className="contact-info">
-                <p>📞 Llama ahora: <a href="tel:+1234567890">+1234567890</a></p>
-                <p>📍 Visítanos en: Av. Ejemplo 1234, Buenos Aires</p>
-                <p>📧 Email: <a href="mailto:info@concesionario.com">info@concesionario.com</a></p>
-            </div>
         </header>
     );
 }
 
 export default Header;
-

@@ -1,8 +1,17 @@
-/* General header styles */
+/* Reset general de márgenes y padding */
+h1{
+  text-align: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos del header */
 .header-container {
   background-color: #1a1a1a;
   color: #f5f5f5;
-  padding: 10px 0;
+  padding: 50px 0;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: sticky;
@@ -69,55 +78,32 @@
   background-color: #e6b800;
 }
 
-/* Sección de contacto */
-.contact-info {
-  background-color: #333333;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 14px;
-  color: #ffcc00;
-  margin-top: 40px; /* Espacio entre el carrusel y la sección de contacto */
-}
-
-.contact-info p {
-  margin: 5px 0;
-}
-
-.contact-info a {
-  color: #ffcc00;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.contact-info a:hover {
-  text-decoration: underline;
-}
-
 /* Carrusel de autos */
+/* Estilos del carrusel */
 .car-slider {
   display: flex;
-  justify-content: center; /* Centrar el carrusel */
+  justify-content: center;
   align-items: center;
   position: relative;
-  padding: 60px 0; /* Espacio arriba y abajo del carrusel */
+  padding: 60px 0;
   margin: 0 auto;
-  max-width: 90%; /* Evitar que ocupe todo el ancho de la pantalla */
+  max-width: 90%;
+  min-height: 300px; /* Altura mínima para que se vea el carrusel */
 }
 
 .car-list {
   display: flex;
   flex-wrap: nowrap;
-  overflow-x: auto; /* Desplazamiento horizontal */
+  overflow-x: auto; /* Hacer que el carrusel sea desplazable horizontalmente */
   scroll-behavior: smooth;
   gap: 20px;
 }
 
-/* Tarjetas de autos */
 .car-card {
   border: 2px solid #ddd;
   border-radius: 10px;
-  width: 250px; /* Ajustar tamaño para mejor visualización */
-  padding: 20px;
+  width: 500px;
+  padding: 100px;
   background-color: #fff;
   box-shadow: 0 15px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
@@ -130,6 +116,7 @@
 
 .car-card img {
   max-width: 100%;
+  height: auto;
   border-radius: 10px;
 }
 
@@ -157,4 +144,153 @@
 
 .scroll-button:hover {
   background-color: #555;
+}
+/* Footer styles */
+.footer-container {
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+  padding: 40px 0;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 20px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #ffcc00;
+}
+
+.footer-section p,
+.footer-section a {
+  color: #f5f5f5;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.footer-section a {
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #ffcc00;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+}
+
+.social-links li {
+  margin: 10px 0;
+}
+
+.social-links li a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.social-links li a:hover {
+  color: #ffcc00;
+}
+
+.social-links li i {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+/* Estilos de iconos sociales */
+.fab {
+  font-family: "Font Awesome 5 Brands";
+}
+/* Botón de Iniciar Sesión */
+.btn-login {
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Verde */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-left: 15px; /* Espacio entre el botón Cotiza y este botón */
+}
+
+.btn-login:hover {
+  background-color: #45a049; /* Verde más oscuro en hover */
+}
+
+
+/* Barra de búsqueda */
+/* Barra de búsqueda en la esquina inferior izquierda */
+/* Contenedor de la barra de búsqueda */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0; /* Margen superior e inferior para espaciado */
+}
+
+/* Estilos para el formulario de búsqueda */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  max-width: 600px; /* Ajusta el tamaño máximo de la barra */
+  width: 100%;
+}
+
+/* Estilos para el input de búsqueda */
+.search-bar input {
+  border: none;
+  outline: none;
+  background: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 25px;
+  flex-grow: 1;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Estilos para el botón de búsqueda */
+.search-bar button {
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-left: 5px;
+}
+
+.search-bar button:hover {
+  background-color: #e6b800;
 }
