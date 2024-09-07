@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
 import CarList from './components/CarList';
+import NewsCarousel from './components/NewsCarousel'; // Importa el carrusel de noticias
+import FilterAccordion from './components/FilterAccordion';
 
 const App = () => {
     // Estado para capturar el término de búsqueda
@@ -9,17 +11,13 @@ const App = () => {
     // Función que maneja la búsqueda cuando se envía el formulario
     const handleSearch = (event) => {
         event.preventDefault();
-        // Aquí puedes manejar la lógica de búsqueda
         console.log('Buscando:', searchTerm);
-        // Si deseas hacer algo con los datos de búsqueda, puedes agregar la lógica aquí.
     }
 
     return (
         <div className="App">
             <Header />
             <main>
-                
-
                 {/* Barra de búsqueda */}
                 <div className="search-container">
                     <form className="search-bar" onSubmit={handleSearch}>
@@ -32,9 +30,16 @@ const App = () => {
                         <button type="submit">Buscar</button>
                     </form>
                 </div>
+
+                {/* Lista de autos */}
                 <h1>Lista de Autos</h1>
-                {/* Componente que muestra la lista de autos */}
                 <CarList searchTerm={searchTerm} />
+
+                {/* Carrusel de noticias */}
+                <h1>Noticias Recientes</h1>
+                <NewsCarousel /> {/* Aquí se muestra el carrusel de noticias */}
+
+                
             </main>
 
             {/* Footer con más contenido y enlaces sociales */}

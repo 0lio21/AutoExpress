@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "title": "Nuevos modelos de autos en 2024",
+      "description": "Los fabricantes de automóviles están lanzando nuevas versiones más eficientes y elegantes para el próximo año.",
+      "image": "https://example.com/new_model_2024.jpg"
+    },
+    {
+      "id": 2,
+      "title": "El futuro de los autos eléctricos",
+      "description": "Las ventas de vehículos eléctricos están en aumento y los fabricantes están invirtiendo en infraestructura de carga.",
+      "image": "https://example.com/electric_future.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Tecnología de conducción autónoma",
+      "description": "Las empresas están avanzando en la implementación de sistemas de conducción autónoma para mejorar la seguridad.",
+      "image": "https://example.com/autonomous_tech.jpg"
+    }
+  ]
+  
