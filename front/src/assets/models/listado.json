@@ -1,0 +1,245 @@
+{
+    "autos": [
+      {
+        "id": 1,
+        "marca": "Fiat",
+        "modelo": "Toro",
+        "transmision": "Automático",
+        "precio": 26400000,
+        "imagen": "https://images.prd.kavak.io/eyJidWNrZXQiOiJrYXZhay1pbWFnZXMiLCJrZXkiOiJpbWFnZXMvMzQyNjk1L0VYVEVSSU9SLWZyb250U2lkZVBpbG90TmVhci0xNzI0OTM5Mzk1NjQwLmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkZ2giOjU0MCwiaGVpZ2h0IjozMTB9fX0="
+      },
+      {
+        "id": 2,
+        "marca": "Fiat",
+        "modelo": "Toro",
+        "transmision": "Automático",
+        "precio": 24200000,
+        "imagen": "https://images.prd.kavak.io/eyJidWNrZXQiOiJrYXZhay1pbWFnZXMiLCJrZXkiOiJpbWFnZXMvMzQ3OTEwL0VYVEVSSU9SLWZyb250U2lkZVBpbG90TmVhci0xNzI2ODMzMzk0NDc0LmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkZ2giOjU0MCwiaGVpZ2h0IjozMTB9fX0="
+      },
+      {
+        "id": 3,
+        "marca": "Fiat",
+        "modelo": "Cronos",
+        "transmision": "Manual",
+        "precio": 18780000,
+        "imagen": "https://images.prd.kavak.io/eyJidWNrZXQiOiJrYXZhay1pbWFnZXMiLCJrZXkiOiJpbWFnZXMvMzQ2NjI5L0VYVEVSSU9SLWZyb250U2lkZVBpbG90TmVhci0xNzI2MjQ2ODQ5NjQ4LmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkZ2giOjU0MCwiaGVpZ2h0IjozMTB9fX0="
+      },
+      {
+        "id": 4,
+        "marca": "Fiat",
+        "modelo": "500X",
+        "transmision": "Manual",
+        "precio": 19050000,
+        "imagen": "URL_de_imagen_4"
+      },
+      {
+        "id": 5,
+        "marca": "Fiat",
+        "modelo": "Toro",
+        "transmision": "Automático",
+        "precio": 26510000,
+        "imagen": "URL_de_imagen_5"
+      },
+      {
+        "id": 6,
+        "marca": "Fiat",
+        "modelo": "Argo",
+        "transmision": "Manual",
+        "precio": 16170000,
+        "imagen": "URL_de_imagen_6"
+      },
+      {
+        "id": 7,
+        "marca": "Fiat",
+        "modelo": "Cronos",
+        "transmision": "Automático",
+        "precio": 20980000,
+        "imagen": "URL_de_imagen_7"
+      },
+      {
+        "id": 8,
+        "marca": "Fiat",
+        "modelo": "Cronos",
+        "transmision": "Manual",
+        "precio": 15350000,
+        "imagen": "URL_de_imagen_8"
+      },
+      {
+        "id": 9,
+        "marca": "Fiat",
+        "modelo": "Cronos",
+        "transmision": "Manual",
+        "precio": 18960000,
+        "imagen": "URL_de_imagen_9"
+      },
+      {
+        "id": 10,
+        "marca": "Fiat",
+        "modelo": "Argo",
+        "transmision": "Manual",
+        "precio": 18390000,
+        "imagen": "URL_de_imagen_10"
+      },
+      {
+        "id": 11,
+        "marca": "Fiat",
+        "modelo": "Palio",
+        "transmision": "Manual",
+        "precio": 12500000,
+        "imagen": "URL_de_imagen_11"
+      },
+      {
+        "id": 12,
+        "marca": "Fiat",
+        "modelo": "Cronos",
+        "transmision": "Manual",
+        "precio": 18420000,
+        "imagen": "URL_de_imagen_12"
+      },
+      {
+        "id": 13,
+        "marca": "Fiat",
+        "modelo": "Palio",
+        "transmision": "Manual",
+        "precio": 11830000,
+        "imagen": "URL_de_imagen_13"
+      },
+      {
+        "id": 14,
+        "marca": "Fiat",
+        "modelo": "Cronos",
+        "transmision": "Manual",
+        "precio": 19150000,
+        "imagen": "URL_de_imagen_14"
+      },
+      {
+        "id": 15,
+        "marca": "Fiat",
+        "modelo": "Cronos",
+        "transmision": "Manual",
+        "precio": 17630000,
+        "imagen": "URL_de_imagen_15"
+      },
+      {
+        "id": 16,
+        "marca": "Fiat",
+        "modelo": "Mobi",
+        "transmision": "Manual",
+        "precio": 11230000,
+        "imagen": "URL_de_imagen_16"
+      },
+      {
+        "id": 17,
+        "marca": "Fiat",
+        "modelo": "Argo",
+        "transmision": "Manual",
+        "precio": 14110000,
+        "imagen": "URL_de_imagen_17"
+      },
+      {
+        "id": 18,
+        "marca": "Fiat",
+        "modelo": "Cronos",
+        "transmision": "Manual",
+        "precio": 15810000,
+        "imagen": "URL_de_imagen_18"
+      },
+      {
+        "id": 19,
+        "marca": "Fiat",
+        "modelo": "Cronos",
+        "transmision": "Automático",
+        "precio": 21410000,
+        "imagen": "URL_de_imagen_19"
+      },
+      {
+        "id": 20,
+        "marca": "Fiat",
+        "modelo": "Palio",
+        "transmision": "Manual",
+        "precio": 8320000,
+        "imagen": "URL_de_imagen_20"
+      },
+      {
+        "id": 21,
+        "marca": "Fiat",
+        "modelo": "Palio",
+        "transmision": "Manual",
+        "precio": 10370000,
+        "imagen": "URL_de_imagen_21"
+      },
+      {
+        "id": 22,
+        "marca": "Fiat",
+        "modelo": "Strada",
+        "transmision": "Manual",
+        "precio": 18900000,
+        "imagen": "URL_de_imagen_22"
+      },
+      {
+        "id": 23,
+        "marca": "Fiat",
+        "modelo": "Cronos",
+        "transmision": "Automático",
+        "precio": 13570000,
+        "imagen": "URL_de_imagen_23"
+      },
+      {
+        "id": 24,
+        "marca": "Fiat",
+        "modelo": "500",
+        "transmision": "Automático",
+        "precio": 23630000,
+        "imagen": "URL_de_imagen_24"
+      },
+      {
+        "id": 25,
+        "marca": "Fiat",
+        "modelo": "500X",
+        "transmision": "Manual",
+        "precio": 16840000,
+        "imagen": "URL_de_imagen_25"
+      },
+      {
+        "id": 26,
+        "marca": "Fiat",
+        "modelo": "Cronos",
+        "transmision": "Manual",
+        "precio": 20090000,
+        "imagen": "URL_de_imagen_26"
+      },
+      {
+        "id": 27,
+        "marca": "Fiat",
+        "modelo": "500X",
+        "transmision": "Automático",
+        "precio": 23640000,
+        "imagen": "URL_de_imagen_27"
+      },
+      {
+        "id": 28,
+        "marca": "Fiat",
+        "modelo": "500",
+        "transmision": "Manual",
+        "precio": 26600000,
+        "imagen": "URL_de_imagen_28"
+      },
+      {
+        "id": 29,
+        "marca": "Fiat",
+        "modelo": "500",
+        "transmision": "Automático",
+        "precio": 18020000,
+        "imagen": "URL_de_imagen_29"
+      },
+      {
+        "id": 30,
+        "marca": "Fiat",
+        "modelo": "Cronos",
+        "transmision": "Manual",
+        "precio": 18110000,
+        "imagen": "URL_de_imagen_30"
+      }
+    ]
+  }
+  

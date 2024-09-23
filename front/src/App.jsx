@@ -7,6 +7,8 @@ import './App.css';
 import Inicio from './pages/inicio/page';
 import Contacto from './pages/contacto/page';
 import Footer from './pages/footer/footer';
+import { Public } from '@mui/icons-material';
+import Publicacion from './pages/publicacion/publicacion';
 
 function App() {
   const [themeMode, setThemeMode] = useState('light');
@@ -35,6 +37,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Inicio />} />
+          <Route path="/publicacion" element={<Publicacion id={0}/>} />
           {/* Puedes agregar más rutas aquí si lo deseas */}
         </Routes>
       </Router>

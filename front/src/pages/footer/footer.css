@@ -1,0 +1,6 @@
+.select {
+    background-image: linear-gradient(50deg, #FFD700, #999999);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}

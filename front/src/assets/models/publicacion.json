@@ -1,0 +1,15 @@
+{
+    "auto":{
+        "id": 1,
+        "marca": "Fiat",
+        "modelo": "Toro",
+        "año": 2020,
+        "kilometraje": 38086,
+        "precio": 26400000,
+        "moneda": "ARS",
+        "color": "Gris",
+        "transmision": "Automático",
+        "ubicacion": "Buenos Aires",
+        "imagen": "https://images.prd.kavak.io/eyJidWNrZXQiOiJrYXZhay1pbWFnZXMiLCJrZXkiOiJpbWFnZXMvMzQyNjk1L0VYVEVSSU9SLWZyb250U2lkZVBpbG90TmVhci0xNzI0OTM5Mzk1NjQwLmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjU0MCwiaGVpZ2h0IjozMTB9fX0="
+      }
+}
