@@ -1,70 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import data from "../../assets/models/listado.json";
 import { Card, CardContent, CardMedia, Typography, Box } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import { Button, Container } from "react-bootstrap";
+import { Button, Container, Carousel } from "react-bootstrap";
 import './inicio.css';
 
 export default function Inicio() {
-  const navegar = useNavigate();
+  const [index, setIndex] = useState(0);
+  const navigate = useNavigate();
 
   const handleClick = (id) => {
-    navegar(`/publicacion?id=${id}`);
+    navigate(`/publicacion?id=${id}`);
+  };
+
+  const handleSelect = (selectedIndex) => {
+    setIndex(selectedIndex);
   };
 
   return (
     <Box>
-  
-      <Container>
+      <div className="carousel-container">
         <h2 className="text-center my-4">Autos en Promoción</h2>
-        <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
-          <div className="carousel-indicators">
-            {data.autos.slice(0, 3).map((_, index) => (
-              <button
-                key={index}
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to={index}
-                className={index === 0 ? "active" : ""}
-                aria-current={index === 0 ? "true" : "false"}
-                aria-label={`Slide ${index + 1}`}
-              ></button>
-            ))}
-          </div>
-          <div className="carousel-inner">
-            {data.autos.slice(0, 3).map((auto, index) => (
-              <div key={auto.id} className={`carousel-item ${index === 0 ? "active" : ""}`}>
-                <img src={auto.imagen} className="d-block w-100" alt={`${auto.marca} ${auto.modelo}`} />
-                <div className="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
-                  <h5>{auto.marca} {auto.modelo}</h5>
-                  <p>Precio: ${auto.precio.toLocaleString()}</p>
-                  <Button variant="light" onClick={() => handleClick(auto.id)}>
-                    Ver Detalles
-                  </Button>
-                </div>
-              </div>
-            ))}
-          </div>
-          <button
-            className="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev"
-          >
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button
-            className="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next"
-          >
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Next</span>
-          </button>
-        </div>
-      </Container>
+        <Carousel activeIndex={index} onSelect={handleSelect}>
+          {data.autos.slice(0, 3).map((auto) => (
+            <Carousel.Item key={auto.id}>
+              <img
+                className="d-block w-100"
+                src={auto.imagen}
+                alt={`${auto.marca} ${auto.modelo}`}
+                style={{ maxHeight: "500px", objectFit: "cover" }}
+              />
+              <Carousel.Caption className="bg-dark bg-opacity-50 p-3 rounded">
+                <h5>{auto.marca} {auto.modelo}</h5>
+                <p>Precio: ${auto.precio.toLocaleString()}</p>
+                <Button variant="light" onClick={() => handleClick(auto.id)}>
+                  Ver Detalles
+                </Button>
+              </Carousel.Caption>
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      </div>
 
       <Typography variant="h2" gutterBottom>
         Listado de Autos
@@ -79,7 +55,7 @@ export default function Inicio() {
                   component="img"
                   height="200"
                   image={auto.imagen}
-                  alt={auto.marca + " " + auto.modelo}
+                  alt={`${auto.marca} ${auto.modelo}`}
                   style={{ height: '100%' }}
                 />
                 <CardContent>

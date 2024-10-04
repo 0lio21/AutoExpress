@@ -1,13 +1,16 @@
+.carousel-container {
+  width: 100vw; /* 100% del ancho de la pantalla */
+  margin-left: calc(50% - 50vw); /* Centrado horizontal */
+}
+
 .carousel-item img {
-    height: 500px; /* Ajusta la altura de la imagen según sea necesario */
-    object-fit: cover; /* Mantiene la relación de aspecto de la imagen */
-  }
-  
-  .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
-    padding: 15px;
-  }
+  width: 100vw; /* Asegura que la imagen ocupe todo el ancho de la pantalla */
+}
 
-  
+.carousel .carousel-item {
+  height: 500px; /* Puedes ajustar esta altura según sea necesario */
+}
 
-  
+.carousel .carousel-item img {
+  object-fit: cover; /* Asegura que la imagen se recorte en lugar de deformarse */
+}
