@@ -17,6 +17,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import { alpha, styled } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
+import { Link } from '@mui/material';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
 
@@ -86,9 +87,9 @@ const Header = ({ page, toggleTheme, currentTheme }) => {
   };
 
   const menuItems = [
-    { text: 'Ofertas', icon: <LocalOfferIcon /> },
+    { text: 'Ofertas', icon: <LocalOfferIcon />, to: '/ofertas' },
     { text: 'Listado', icon: <DirectionsCarIcon />, onclick: handleListadoClick},
-    { text: 'Financiamiento', icon: <AttachMoneyIcon /> },
+    { text: 'Financiamiento', icon: <AttachMoneyIcon />, to: '/listado'},
   ];
 
   const additionalItems = ['Tienda', 'Ubicación', 'Soporte Técnico', 'FAQ'];
@@ -109,7 +110,9 @@ const Header = ({ page, toggleTheme, currentTheme }) => {
 
           {/* Título del concesionario */}
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            <Link className='text-white' to="/">
             Concesionario
+            </Link>
           </Typography>
 
           {/* Cuadro de búsqueda con tamaño reducido */}
@@ -131,7 +134,7 @@ const Header = ({ page, toggleTheme, currentTheme }) => {
           {!isSmallScreen && page === 'inicio' && (
             <Box sx={{ display: 'flex', alignItems: 'center', ml: 2 }}>
               {menuItems.map((item) => (
-                <Button key={item.text} color="inherit" startIcon={item.icon}>
+                <Button key={item.text} href={item.to} color="inherit" startIcon={item.icon}>
                   {item.text}
                 </Button>
               ))}
@@ -157,10 +160,12 @@ const Header = ({ page, toggleTheme, currentTheme }) => {
           <Divider />
           {/* Menú principal con íconos */}
           {menuItems.map((item) => (
+            
             <ListItem button key={item.text} onClick={handleDrawerToggle}>
               <ListItemIcon>{item.icon}</ListItemIcon>
               <ListItemText primary={item.text} />
             </ListItem>
+            
           ))}
           <Divider />
           {/* Opciones adicionales */}
