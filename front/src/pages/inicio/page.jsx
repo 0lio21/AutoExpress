@@ -26,6 +26,7 @@ export default function Inicio() {
                   height="200"
                   image={auto.imagen}
                   alt={auto.marca + " " + auto.modelo}
+                  style={{height: '100%'}}
                 />
                 <CardContent>
                   <Typography variant="h6">

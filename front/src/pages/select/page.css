@@ -1,7 +1,35 @@
 
 
 .div-modelo{
-    height: 400px;
-    padding: 50px;
+    height: 500px;
+    margin-left: auto;
     border-radius: 10px;
+    width: 75%;
+    background-color: black;
+}
+
+.texto-modelo {
+    position: absolute;
+    top: 50%; /* Centrado vertical */
+    left: 10%; /* Alineación hacia un costado (ajusta según necesites) */
+    transform: translateY(-50%); /* Ajuste para centrar el div verticalmente */
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+
+.azul {
+    color: blue;
+    
+}
+.gradiente{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 35%, rgba(0,0,0,0) 100%);
+    height: 500px;
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+    pointer-events: none;
+    z-index: 2;
+    position: absolute;
 }

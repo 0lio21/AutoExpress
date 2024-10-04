@@ -26,10 +26,18 @@ export default function Select() {
                     <MenuItem value="corolla">Corolla</MenuItem>
                 </MuiSelect>
             </FormControl>
-            
+
             {/* Contenedor que muestra el auto seleccionado */}
-            <div className="div-modelo" key={selectedCar}>
-                <Modelo auto={selectedCar} className='modelo'></Modelo>
+            <div >
+                <div className='gradiente'>
+                    <div className='texto-modelo'>
+                        <h1>El Nuevo Volkswagen e-Golf</h1>
+                        <h2>Ahora en azul <a className='azul'>e</a>-léctrico</h2>
+                    </div>
+                </div>
+                <div className="div-modelo" key={selectedCar}>
+                    <Modelo auto={selectedCar} className='modelo'></Modelo>
+                </div>
             </div>
         </div>
     );

@@ -47,10 +47,8 @@ function App() {
       </Router>
       <div>
         <Footer />
-        <div style={{ height: 600 }}>
-
           
-        </div>
+        
       </div>
     </ThemeProvider>
   );
