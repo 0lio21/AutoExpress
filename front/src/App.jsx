@@ -42,7 +42,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Inicio />} />
           <Route path="/publicacion" element={<Publicacion id={0} />} />
-          <Route path="/select" element={<Select />} />
+          <Route path="/select" toggleTheme={toggleTheme} element={<Select />} />
           <Route path='/listado' element= {<Listado/>} />
           {/* <Route path='/modelo3d' element={<Modelo/>} /> */}
           {/* Puedes agregar más rutas aquí si lo deseas */}
