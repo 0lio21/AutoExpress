@@ -35,9 +35,10 @@ function App() {
       <CssBaseline />
       <div>
         {/* Pasamos la función toggleTheme y el tema actual al Header */}
-        <Header page={'inicio'} toggleTheme={toggleTheme} currentTheme={themeMode} />
       </div>
       <Router>
+        <Header page={'inicio'} toggleTheme={toggleTheme} currentTheme={themeMode} />
+
         <Routes>
           <Route path="/" element={<Inicio />} />
           <Route path="/publicacion" element={<Publicacion id={0} />} />

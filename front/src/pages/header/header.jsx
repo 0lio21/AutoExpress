@@ -17,6 +17,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import { alpha, styled } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
+import { Link } from '@mui/material';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
 
@@ -109,7 +110,9 @@ const Header = ({ page, toggleTheme, currentTheme }) => {
 
           {/* Título del concesionario */}
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            <Link to="/">
             Concesionario
+            </Link>
           </Typography>
 
           {/* Cuadro de búsqueda con tamaño reducido */}
