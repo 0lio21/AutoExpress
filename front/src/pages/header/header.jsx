@@ -81,10 +81,13 @@ const Header = ({ page, toggleTheme, currentTheme }) => {
       console.error('Error al buscar:', error);
     }
   };
+  const handleListadoClick = () => {
+    navigate('./listado'); // Redirigir a la página de Listado
+  };
 
   const menuItems = [
     { text: 'Ofertas', icon: <LocalOfferIcon /> },
-    { text: 'Nuevos Modelos', icon: <DirectionsCarIcon /> },
+    { text: 'Listado', icon: <DirectionsCarIcon />, onclick: handleListadoClick},
     { text: 'Financiamiento', icon: <AttachMoneyIcon /> },
   ];
 

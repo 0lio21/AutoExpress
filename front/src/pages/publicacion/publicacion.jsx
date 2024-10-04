@@ -1,6 +1,6 @@
 import React from 'react';
 import data from '../../assets/models/publicacion.json';
-import { Card, CardContent, CardMedia, Typography, Box } from '@mui/material';
+import { Card, CardContent, CardMedia, Typography, Box, Button } from '@mui/material';
 
 export default function Publicacion() {
     let auto = data.auto;
@@ -39,6 +39,10 @@ export default function Publicacion() {
                         <Typography variant="body2" color="text.secondary">
                             <strong>Ubicación:</strong> {auto.ubicacion}
                         </Typography>
+                        <Box display='flex' gap='10px' marginTop='20px'>
+                            <Button variant='contained' color='primary'>Comprar</Button>
+                            <Button variant='outlined' color='secondary'>Detalles</Button>
+                        </Box>
                     </CardContent>
                 </Card>
                 
