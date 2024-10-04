@@ -10,7 +10,8 @@
       "color": "Gris",
       "transmision": "Automático",
       "ubicacion": "Buenos Aires",
-      "imagen": "https://images.prd.kavak.io/eyJidWNrZXQiOiJrYXZhay1pbWFnZXMiLCJrZXkiOiJpbWFnZXMvMzQyNjk1L0VYVEVSSU9SLWZyb250U2lkZVBpbG90TmVhci0xNzI0OTM5Mzk1NjQwLmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjU0MCwiaGVpZ2h0IjozMTB9fX0="
+      "imagen": "https://images.prd.kavak.io/eyJidWNrZXQiOiJrYXZhay1pbWFnZXMiLCJrZXkiOiJpbWFnZXMvMzQyNjk1L0VYVEVSSU9SLWZyb250U2lkZVBpbG90TmVhci0xNzI0OTM5Mzk1NjQwLmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjU0MCwiaGVpZ2h0IjozMTB9fX0=",
+      "descripcion": "Pickup con gran capacidad de carga y confort, ideal para el trabajo y el ocio."
     },
     {
       "marca": "Fiat",
@@ -22,7 +23,8 @@
       "color": "Gris",
       "transmision": "Automático",
       "ubicacion": "Buenos Aires",
-      "imagen": "https://images.prd.kavak.io/eyJidWNrZXQiOiJrYXZhay1pbWFnZXMiLCJrZXkiOiJpbWFnZXMvMzQ3OTEwL0VYVEVSSU9SLWZyb250U2lkZVBpbG90TmVhci0xNzI2ODMzMzk0NDc0LmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjU0MCwiaGVpZ2h0IjozMTB9fX0="
+      "imagen": "https://images.prd.kavak.io/eyJidWNrZXQiOiJrYXZhay1pbWFnZXMiLCJrZXkiOiJpbWFnZXMvMzQ3OTEwL0VYVEVSSU9SLWZyb250U2lkZVBpbG90TmVhci0xNzI2ODMzMzk0NDc0LmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjU0MCwiaGVpZ2h0IjozMTB9fX0=",
+      "descripcion": "Versión con mayor kilometraje, ideal para quienes buscan una camioneta versátil."
     },
     {
       "marca": "Fiat",
@@ -34,7 +36,8 @@
       "color": "Gris",
       "transmision": "Manual",
       "ubicacion": "Buenos Aires",
-      "imagen": "https://images.prd.kavak.io/eyJidWNrZXQiOiJrYXZhay1pbWFnZXMiLCJrZXkiOiJpbWFnZXMvMzQ2NjI5L0VYVEVSSU9SLWZyb250U2lkZVBpbG90TmVhci0xNzI2MjQ2ODQ5NjQ4LmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjU0MCwiaGVpZ2h0IjozMTB9fX0="
+      "imagen": "https://images.prd.kavak.io/eyJidWNrZXQiOiJrYXZhay1pbWFnZXMiLCJrZXkiOiJpbWFnZXMvMzQ2NjI5L0VYVEVSSU9SLWZyb250U2lkZVBpbG90TmVhci0xNzI2MjQ2ODQ5NjQ4LmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjU0MCwiaGVpZ2h0IjozMTB9fX0=",
+      "descripcion": "Sedán moderno y elegante, perfecto para la ciudad y viajes familiares."
     },
     {
       "marca": "Fiat",
@@ -46,19 +49,8 @@
       "color": "Gris",
       "transmision": "Manual",
       "ubicacion": "Buenos Aires",
-      "imagen": "URL_de_imagen_4"
-    },
-    {
-      "marca": "Fiat",
-      "modelo": "Toro",
-      "año": 2020,
-      "kilometraje": 26258,
-      "precio": 26510000,
-      "moneda": "ARS",
-      "color": "Gris",
-      "transmision": "Automático",
-      "ubicacion": "Buenos Aires",
-      "imagen": "URL_de_imagen_5"
+      "imagen": "URL_de_imagen_4",
+      "descripcion": "SUV compacto con estilo y versatilidad, ideal para aventuras urbanas."
     },
     {
       "marca": "Fiat",
@@ -70,7 +62,8 @@
       "color": "Gris",
       "transmision": "Manual",
       "ubicacion": "Buenos Aires",
-      "imagen": "URL_de_imagen_6"
+      "imagen": "URL_de_imagen_6",
+      "descripcion": "Hatchback ágil y económico, perfecto para la ciudad."
     },
     {
       "marca": "Fiat",
@@ -82,43 +75,8 @@
       "color": "Gris",
       "transmision": "Automático",
       "ubicacion": "Buenos Aires",
-      "imagen": "URL_de_imagen_7"
-    },
-    {
-      "marca": "Fiat",
-      "modelo": "Cronos",
-      "año": 2020,
-      "kilometraje": 48553,
-      "precio": 15350000,
-      "moneda": "ARS",
-      "color": "Gris",
-      "transmision": "Manual",
-      "ubicacion": "Buenos Aires",
-      "imagen": "URL_de_imagen_8"
-    },
-    {
-      "marca": "Fiat",
-      "modelo": "Cronos",
-      "año": 2023,
-      "kilometraje": 14735,
-      "precio": 18960000,
-      "moneda": "ARS",
-      "color": "Plateado",
-      "transmision": "Manual",
-      "ubicacion": "Buenos Aires",
-      "imagen": "URL_de_imagen_9"
-    },
-    {
-      "marca": "Fiat",
-      "modelo": "Argo",
-      "año": 2020,
-      "kilometraje": 28712,
-      "precio": 18390000,
-      "moneda": "ARS",
-      "color": "Blanco",
-      "transmision": "Manual",
-      "ubicacion": "Buenos Aires",
-      "imagen": "URL_de_imagen_10"
+      "imagen": "URL_de_imagen_7",
+      "descripcion": "Sedán de última generación, cómodo y eficiente para viajes largos."
     },
     {
       "marca": "Fiat",
@@ -130,55 +88,8 @@
       "color": "Blanco",
       "transmision": "Manual",
       "ubicacion": "Buenos Aires",
-      "imagen": "URL_de_imagen_11"
-    },
-    {
-      "marca": "Fiat",
-      "modelo": "Cronos",
-      "año": 2020,
-      "kilometraje": 34266,
-      "precio": 18420000,
-      "moneda": "ARS",
-      "color": "Gris",
-      "transmision": "Manual",
-      "ubicacion": "Buenos Aires",
-      "imagen": "URL_de_imagen_12"
-    },
-    {
-      "marca": "Fiat",
-      "modelo": "Palio",
-      "año": 2017,
-      "kilometraje": 46000,
-      "precio": 11830000,
-      "moneda": "ARS",
-      "color": "Rojo",
-      "transmision": "Manual",
-      "ubicacion": "Buenos Aires",
-      "imagen": "URL_de_imagen_13"
-    },
-    {
-      "marca": "Fiat",
-      "modelo": "Cronos",
-      "año": 2024,
-      "kilometraje": 1759,
-      "precio": 19150000,
-      "moneda": "ARS",
-      "color": "Rojo",
-      "transmision": "Manual",
-      "ubicacion": "Buenos Aires",
-      "imagen": "URL_de_imagen_14"
-    },
-    {
-      "marca": "Fiat",
-      "modelo": "Cronos",
-      "año": 2023,
-      "kilometraje": 15085,
-      "precio": 17630000,
-      "moneda": "ARS",
-      "color": "Gris",
-      "transmision": "Manual",
-      "ubicacion": "Buenos Aires",
-      "imagen": "URL_de_imagen_15"
+      "imagen": "URL_de_imagen_11",
+      "descripcion": "Compacto ideal para la ciudad, fácil de maniobrar y económico."
     },
     {
       "marca": "Fiat",
@@ -190,67 +101,8 @@
       "color": "Blanco",
       "transmision": "Manual",
       "ubicacion": "Buenos Aires",
-      "imagen": "URL_de_imagen_16"
-    },
-    {
-      "marca": "Fiat",
-      "modelo": "Argo",
-      "año": 2019,
-      "kilometraje": 72000,
-      "precio": 14110000,
-      "moneda": "ARS",
-      "color": "Gris",
-      "transmision": "Manual",
-      "ubicacion": "Buenos Aires",
-      "imagen": "URL_de_imagen_17"
-    },
-    {
-      "marca": "Fiat",
-      "modelo": "Cronos",
-      "año": 2021,
-      "kilometraje": 49000,
-      "precio": 15810000,
-      "moneda": "ARS",
-      "color": "Gris",
-      "transmision": "Manual",
-      "ubicacion": "Buenos Aires",
-      "imagen": "URL_de_imagen_18"
-    },
-    {
-      "marca": "Fiat",
-      "modelo": "Cronos",
-      "año": 2023,
-      "kilometraje": 7000,
-      "precio": 21410000,
-      "moneda": "ARS",
-      "color": "Gris",
-      "transmision": "Automático",
-      "ubicacion": "Buenos Aires",
-      "imagen": "URL_de_imagen_19"
-    },
-    {
-      "marca": "Fiat",
-      "modelo": "Palio",
-      "año": 2015,
-      "kilometraje": 119879,
-      "precio": 8320000,
-      "moneda": "ARS",
-      "color": "Blanco",
-      "transmision": "Manual",
-      "ubicacion": "Buenos Aires",
-      "imagen": "URL_de_imagen_20"
-    },
-    {
-      "marca": "Fiat",
-      "modelo": "Palio",
-      "año": 2014,
-      "kilometraje": 99280,
-      "precio": 10370000,
-      "moneda": "ARS",
-      "color": "Gris",
-      "transmision": "Manual",
-      "ubicacion": "Buenos Aires",
-      "imagen": "URL_de_imagen_21"
+      "imagen": "URL_de_imagen_16",
+      "descripcion": "Auto urbano con un diseño moderno, perfecto para el tráfico citadino."
     },
     {
       "marca": "Fiat",
@@ -262,67 +114,8 @@
       "color": "Gris",
       "transmision": "Manual",
       "ubicacion": "Buenos Aires",
-      "imagen": "URL_de_imagen_22"
-    },
-    {
-      "marca": "Fiat",
-      "modelo": "Cronos",
-      "año": 2019,
-      "kilometraje": 104548,
-      "precio": 13570000,
-      "moneda": "ARS",
-      "color": "Gris",
-      "transmision": "Automático",
-      "ubicacion": "Buenos Aires",
-      "imagen": "URL_de_imagen_23"
-    },
-    {
-      "marca": "Fiat",
-      "modelo": "500",
-      "año": 2019,
-      "kilometraje": 31333,
-      "precio": 23630000,
-      "moneda": "ARS",
-      "color": "Gris",
-      "transmision": "Automático",
-      "ubicacion": "Buenos Aires",
-      "imagen": "URL_de_imagen_24"
-    },
-    {
-      "marca": "Fiat",
-      "modelo": "500X",
-      "año": 2018,
-      "kilometraje": 70296,
-      "precio": 16840000,
-      "moneda": "ARS",
-      "color": "Azul",
-      "transmision": "Manual",
-      "ubicacion": "Buenos Aires",
-      "imagen": "URL_de_imagen_25"
-    },
-    {
-      "marca": "Fiat",
-      "modelo": "Cronos",
-      "año": 2024,
-      "kilometraje": 10900,
-      "precio": 20090000,
-      "moneda": "ARS",
-      "color": "Blanco",
-      "transmision": "Manual",
-      "ubicacion": "Buenos Aires",
-      "imagen": "URL_de_imagen_26"
-    },
-    {
-      "marca": "Fiat",
-      "modelo": "500X",
-      "año": 2019,
-      "kilometraje": 62000,
-      "precio": 23640000,
-      "moneda": "ARS",
-      "color": "Azul",
-      "transmision": "Automático",
-      "ubicacion": "Buenos Aires",
-      "imagen": "URL_de_imagen_27"
+      "imagen": "URL_de_imagen_22",
+      "descripcion": "Pickup versátil y robusta, ideal para trabajo y actividades al aire libre."
     },
     {
       "marca": "Fiat",
@@ -334,19 +127,34 @@
       "color": "Rojo",
       "transmision": "Manual",
       "ubicacion": "Buenos Aires",
-      "imagen": "URL_de_imagen_28"
+      "imagen": "URL_de_imagen_28",
+      "descripcion": "Compacto con un diseño icónico, ideal para quienes buscan estilo y personalidad."
     },
     {
       "marca": "Fiat",
-      "modelo": "500",
-      "año": 2018,
-      "kilometraje": 85820,
-      "precio": 18020000,
+      "modelo": "500X",
+      "año": 2019,
+      "kilometraje": 62000,
+      "precio": 23640000,
       "moneda": "ARS",
-      "color": "Rojo",
+      "color": "Azul",
       "transmision": "Automático",
       "ubicacion": "Buenos Aires",
-      "imagen": "URL_de_imagen_29"
+      "imagen": "URL_de_imagen_27",
+      "descripcion": "SUV con estilo y comodidad, ideal para familias y viajes largos."
+    },
+    {
+      "marca": "Fiat",
+      "modelo": "Cronos",
+      "año": 2024,
+      "kilometraje": 10900,
+      "precio": 20090000,
+      "moneda": "ARS",
+      "color": "Blanco",
+      "transmision": "Manual",
+      "ubicacion": "Buenos Aires",
+      "imagen": "URL_de_imagen_26",
+      "descripcion": "Último modelo de sedán con tecnología avanzada y un diseño moderno."
     },
     {
       "marca": "Fiat",
@@ -358,7 +166,151 @@
       "color": "Gris",
       "transmision": "Manual",
       "ubicacion": "Buenos Aires",
-      "imagen": "URL_de_imagen_30"
+      "imagen": "URL_de_imagen_30",
+      "descripcion": "Sedán eficiente y cómodo, perfecto para el uso diario."
+    },
+    {
+      "marca": "Fiat",
+      "modelo": "Fiat 500",
+      "año": 2018,
+      "kilometraje": 85820,
+      "precio": 18020000,
+      "moneda": "ARS",
+      "color": "Rojo",
+      "transmision": "Automático",
+      "ubicacion": "Buenos Aires",
+      "imagen": "URL_de_imagen_29",
+      "descripcion": "Compacto clásico con un toque retro, ideal para la ciudad."
+    },
+    {
+      "marca": "Fiat",
+      "modelo": "Palio",
+      "año": 2014,
+      "kilometraje": 99280,
+      "precio": 10370000,
+      "moneda": "ARS",
+      "color": "Gris",
+      "transmision": "Manual",
+      "ubicacion": "Buenos Aires",
+      "imagen": "URL_de_imagen_21",
+      "descripcion": "Compacto confiable y económico, ideal para el uso diario."
+    },
+    {
+      "marca": "Fiat",
+      "modelo": "Argo",
+      "año": 2019,
+      "kilometraje": 72000,
+      "precio": 14110000,
+      "moneda": "ARS",
+      "color": "Gris",
+      "transmision": "Manual",
+      "ubicacion": "Buenos Aires",
+      "imagen": "URL_de_imagen_17",
+      "descripcion": "Hatchback moderno y espacioso, perfecto para la ciudad y viajes cortos."
+    },
+    {
+      "marca": "Fiat",
+      "modelo": "Cronos",
+      "año": 2021,
+      "kilometraje": 49000,
+      "precio": 15810000,
+      "moneda": "ARS",
+      "color": "Gris",
+      "transmision": "Manual",
+      "ubicacion": "Buenos Aires",
+      "imagen": "URL_de_imagen_18",
+      "descripcion": "Sedán versátil, ideal para quienes buscan comodidad y espacio."
+    },
+    {
+      "marca": "Fiat",
+      "modelo": "Cronos",
+      "año": 2024,
+      "kilometraje": 1759,
+      "precio": 19150000,
+      "moneda": "ARS",
+      "color": "Rojo",
+      "transmision": "Manual",
+      "ubicacion": "Buenos Aires",
+      "imagen": "URL_de_imagen_14",
+      "descripcion": "Modelo 2024 con un diseño innovador y todas las comodidades modernas."
+    },
+    {
+      "marca": "Fiat",
+      "modelo": "Cronos",
+      "año": 2023,
+      "kilometraje": 15085,
+      "precio": 17630000,
+      "moneda": "ARS",
+      "color": "Gris",
+      "transmision": "Manual",
+      "ubicacion": "Buenos Aires",
+      "imagen": "URL_de_imagen_15",
+      "descripcion": "Sedán moderno y eficiente, ideal para el uso diario y viajes familiares."
+    },
+    {
+      "marca": "Fiat",
+      "modelo": "Palio",
+      "año": 2017,
+      "kilometraje": 46000,
+      "precio": 11830000,
+      "moneda": "ARS",
+      "color": "Rojo",
+      "transmision": "Manual",
+      "ubicacion": "Buenos Aires",
+      "imagen": "URL_de_imagen_13",
+      "descripcion": "Compacto con buen rendimiento de combustible, ideal para la ciudad."
+    },
+    {
+      "marca": "Fiat",
+      "modelo": "Cronos",
+      "año": 2023,
+      "kilometraje": 14735,
+      "precio": 18960000,
+      "moneda": "ARS",
+      "color": "Plateado",
+      "transmision": "Manual",
+      "ubicacion": "Buenos Aires",
+      "imagen": "URL_de_imagen_9",
+      "descripcion": "Sedán atractivo y cómodo, perfecto para quienes buscan un auto confiable."
+    },
+    {
+      "marca": "Fiat",
+      "modelo": "500X",
+      "año": 2018,
+      "kilometraje": 70296,
+      "precio": 16840000,
+      "moneda": "ARS",
+      "color": "Azul",
+      "transmision": "Manual",
+      "ubicacion": "Buenos Aires",
+      "imagen": "URL_de_imagen_25",
+      "descripcion": "SUV versátil con un diseño atractivo, ideal para la ciudad y escapadas."
+    },
+    {
+      "marca": "Fiat",
+      "modelo": "Fiat 500",
+      "año": 2019,
+      "kilometraje": 31333,
+      "precio": 23630000,
+      "moneda": "ARS",
+      "color": "Gris",
+      "transmision": "Automático",
+      "ubicacion": "Buenos Aires",
+      "imagen": "URL_de_imagen_24",
+      "descripcion": "Auto icónico con estilo clásico y tecnología moderna, perfecto para la ciudad."
+    },
+    {
+      "marca": "Fiat",
+      "modelo": "Cronos",
+      "año": 2019,
+      "kilometraje": 104548,
+      "precio": 13570000,
+      "moneda": "ARS",
+      "color": "Gris",
+      "transmision": "Automático",
+      "ubicacion": "Buenos Aires",
+      "imagen": "URL_de_imagen_23",
+      "descripcion": "Sedán cómodo y espacioso, ideal para familias y viajes largos."
     }
   ]
 }
