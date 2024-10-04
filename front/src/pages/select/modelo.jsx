@@ -20,21 +20,34 @@ function Model({ auto }) {
                         const material = child.material;
 
                         // Mostrar el nombre de cada material en la consola
-                        if (material) {
-                            console.log(typeof(material.name));
-                        }
 
-                        if (typeof(material.name) === 'string') {
+                        if (typeof (material.name) === 'string') {
                             // Aplicar propiedades según nombre del material
-                            if (material.name.includes("PBR") || material.name.includes("Window")) {
+                            if (material.name.includes("Glass") || material.name.includes("Window")) {
                                 material.transparent = true; // Solo habilitar transparencia en materiales de cristal
                                 material.opacity = 0.5; // Opacidad para vidrio
                                 material.roughness = 0; // Superficie lisa para cristales
                                 material.metalness = 0; // Sin metalidad en vidrios
-                            } else if (material.name.includes("Metal")) {
-                                material.metalness = 0.9; // Efecto metálico (0 a 1)
-                                material.roughness = 0.1; // Baja rugosidad para metales
+                            } else if (material.name.includes("Negro")) {
+                                material.metalness = 1; // Efecto metálico (0 a 1)
+                                material.roughness = 0; // Baja rugosidad para metales
                                 material.opacity = 1; // No aplicar transparencia a metales
+                                material.transparent = false;
+                            } else if (material.name === "Luces") {
+                                console.log("Luces")
+                                material.emissive = new THREE.Color(0xffffff); // Color blanco como luz
+                                material.emissiveIntensity = 1; // Intensidad del color emisivo
+                                material.roughness = 0; // Suavidad máxima
+                                material.metalness = 0; // Sin metalidad
+                                material.opacity = 1; // Sin transparencia
+                                material.transparent = false;
+                            } else if (material.name === "Luz") {
+                                console.log("Luces")
+                                material.emissive = new THREE.Color(0xffffff); // Color blanco como luz
+                                material.emissiveIntensity = 5; // Intensidad del color emisivo
+                                material.roughness = 0; // Suavidad máxima
+                                material.metalness = 0; // Sin metalidad
+                                material.opacity = 1; // Sin transparencia
                                 material.transparent = false;
                             } else {
                                 // Materiales generales (carrocería, etc.)
@@ -47,7 +60,7 @@ function Model({ auto }) {
                             material.needsUpdate = true; // Actualizar material tras cambios
                         }
 
-                        child.castShadow = false; // Activar proyección de sombras
+                        child.castShadow = true; // Activar proyección de sombras
                         child.receiveShadow = true; // Activar recepción de sombras
                     }
                 });
@@ -69,7 +82,7 @@ function Modelo({ auto }) {
         <Canvas
             style={{ background: "transparent" }} // Fondo del canvas transparente
             camera={{
-                position: [50, 15, 60], // Posición inicial de la cámara
+                position: [0, 35, 50], // Posición inicial de la cámara
                 fov: 30, // Campo de visión
                 near: 0.1, // Plano cercano
                 far: 15000, // Plano lejano
@@ -89,11 +102,19 @@ function Modelo({ auto }) {
                 camera.lookAt(0, 0, 0); // Apunta la cámara al centro de la escena
             }}
         >
-            {/* Luces de la escena */}
             <ambientLight intensity={0.4} color="#ffffff" />
-            <directionalLight position={[10, 10, 5]} intensity={1} castShadow={true} /> {/* Luz direccional */}
-            <pointLight position={[0, 5, 0]} intensity={0.8} castShadow={true} /> {/* Luz puntual */}
-            
+
+            <directionalLight
+                castShadow
+                position={[5, 10, 5]}
+                intensity={1}
+                shadow-mapSize-width={4096}  // Ancho de la resolución de la sombra
+                shadow-mapSize-height={4096} // Alto de la resolución de la sombra
+                shadow-camera-far={50}       // Ajuste de la cámara para la sombra
+                shadow-camera-near={1}
+            />
+            <pointLight position={[0, 5, 0]} intensity={0.8} castShadow={true} />
+
             <Suspense fallback={null}>
                 <Model auto={auto} />
             </Suspense>
