@@ -11,6 +11,8 @@ import { Public } from '@mui/icons-material';
 import Publicacion from './pages/publicacion/publicacion';
 import Select from './pages/select/page';
 import Listado from './pages/listado/page';
+import Cotizacion from './pages/cotizacion/page';
+import RespuestaInspector from './pages/respuesta/respuestaInspector';
 
 
 function App() {
@@ -44,6 +46,8 @@ function App() {
           <Route path="/publicacion" element={<Publicacion id={0} />} />
           <Route path="/select" toggleTheme={toggleTheme} element={<Select />} />
           <Route path='/listado' element= {<Listado/>} />
+          <Route path= '/cotizacion' element={<Cotizacion/>} />
+          <Route path='/respuesta' element = {<RespuestaInspector/>} />
           {/* <Route path='/modelo3d' element={<Modelo/>} /> */}
           {/* Puedes agregar más rutas aquí si lo deseas */}
         </Routes>
