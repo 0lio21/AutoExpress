@@ -42,6 +42,19 @@ function Listado() {
   const handleKilometrajeMinChange = (event) => setKilometrajeMin(event.target.value);
   const handleKilometrajeMaxChange = (event) => setKilometrajeMax(event.target.value);
 
+  const limpiarFiltros = () => {
+    setMarcaFiltro('');
+    setTransmisionFiltro('');
+    setColorFiltro('');
+    setUbicacionFiltro('');
+    setAnioFiltro('');
+    setPrecioMax('');
+    setPrecioMin('');
+    setKilometrajeMax('');
+    setKilometrajeMin('');
+    setAutosFiltrados(autos)
+  }
+
   // Función para aplicar los filtros y cerrar el diálogo
   const aplicarFiltros = () => {
     const autosFiltrados = autos.filter((auto) => {
@@ -139,6 +152,7 @@ function Listado() {
           </Box>
         </DialogContent>
         <DialogActions>
+        <Button onClick={limpiarFiltros}>Limpiar Filtros</Button>
           <Button onClick={handleClose}>Cancelar</Button>
           <Button variant="contained" onClick={aplicarFiltros}>Aplicar Filtros</Button>
         </DialogActions>

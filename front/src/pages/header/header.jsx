@@ -88,7 +88,7 @@ const Header = ({ page, toggleTheme, currentTheme }) => {
 
   const menuItems = [
     { text: 'Ofertas', icon: <LocalOfferIcon />, to: '/ofertas' },
-    { text: 'Listado', icon: <DirectionsCarIcon />, onclick: handleListadoClick},
+    { text: 'Listado', icon: <DirectionsCarIcon />, to: '/listado'},
     { text: 'Financiamiento', icon: <AttachMoneyIcon />, to: '/listado'},
   ];
 
