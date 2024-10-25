@@ -10,7 +10,7 @@ export default function Inicio() {
   const navigate = useNavigate();
 
   const handleClick = (id) => {
-    navigate(`/publicacion?id=${id}`);
+    navigate(`/publicacion/${id}`);
   };
 
   const handleSelect = (selectedIndex) => {

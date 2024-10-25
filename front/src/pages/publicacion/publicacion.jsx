@@ -1,9 +1,19 @@
 import React from 'react';
-import data from '../../assets/models/publicacion.json';
+import data from '../../assets/models/listado.json';
 import { Card, CardContent, CardMedia, Typography, Box, Button } from '@mui/material';
+import { useParams } from 'react-router-dom';
 
 export default function Publicacion() {
-    let auto = data.auto;
+    const { id } = useParams();
+    /*let auto = data.auto; */
+    console.log(id);
+    console.log(data);
+    console.log(data.autos[0]);
+
+    
+
+    let auto = data.autos.find(auto => auto.id === Number(id));
+    console.log(auto);
 
     return (
         <>
