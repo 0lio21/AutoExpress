@@ -43,7 +43,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Inicio />} />
-          <Route path="/publicacion" element={<Publicacion id={0} />} />
+          <Route path="/publicacion/:id" element={<Publicacion id={0} />} />
           <Route path="/select" toggleTheme={toggleTheme} element={<Select />} />
           <Route path='/listado' element= {<Listado/>} />
           <Route path= '/cotizacion' element={<Cotizacion/>} />

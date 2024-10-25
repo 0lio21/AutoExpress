@@ -20,7 +20,7 @@ function Listado() {
 
   const handleClick = (id) => {
     console.log(`Auto seleccionado: ${id}`);
-    navigate(`/publicacion?id=${id}`);
+    navigate(`/publicacion/${id}`);
   };
 
   const handleOpen = () => {
