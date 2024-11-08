@@ -1,19 +1,31 @@
 import React from 'react';
-import data from '../../assets/models/listado.json';
+import data from '/public/listado.json';
 import { Card, CardContent, CardMedia, Typography, Box, Button } from '@mui/material';
 import { useParams } from 'react-router-dom';
 
 export default function Publicacion() {
     const { id } = useParams();
-    /*let auto = data.auto; */
     console.log(id);
     console.log(data);
     console.log(data.autos[0]);
 
-    
-
+    // Buscar el auto correspondiente al id
     let auto = data.autos.find(auto => auto.id === Number(id));
     console.log(auto);
+
+    // Si no se encuentra el auto, mostrar un mensaje de error
+    if (!auto) {
+        return (
+            <Box display="flex" justifyContent="center" style={{ marginTop: '20px' }}>
+                <Typography variant="h6" color="error">Auto no encontrado</Typography>
+            </Box>
+        );
+    }
+
+    // Crear el enlace de WhatsApp con el mensaje predefinido
+    const mensaje = `Hola, buenas tardes. Estoy interesado en comprar el ${auto.marca} ${auto.modelo}.`;
+    const numeroWhatsApp = '+5491158785080';  // Reemplaza con el número de teléfono de WhatsApp
+    const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
 
     return (
         <>
@@ -50,16 +62,17 @@ export default function Publicacion() {
                             <strong>Ubicación:</strong> {auto.ubicacion}
                         </Typography>
                         <Box display='flex' gap='10px' marginTop='20px'>
-                            <Button variant='contained' color='primary'>Comprar</Button>
+                            {/* Botón para redirigir a WhatsApp */}
+                            <Button variant='contained' color='primary' onClick={() => window.open(urlWhatsApp, '_blank')}>
+                                Comprar
+                            </Button>
                             <Button variant='outlined' color='secondary'>Detalles</Button>
                         </Box>
                     </CardContent>
                 </Card>
-                
             </Box>
             <Box>
                 <p>Mas detalles: </p>
-                
             </Box>
         </>
     );

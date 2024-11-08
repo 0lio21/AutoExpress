@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import data from "../../assets/models/listado.json";
+import data from "/public/listado.json";
 import { Card, CardContent, CardMedia, Typography, Box } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { Button, Container, Carousel } from "react-bootstrap";
