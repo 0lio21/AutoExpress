@@ -12,8 +12,6 @@ export default function Select({toggleTheme}) {
         setSelectedCar(event.target.value);
     };
 
-   
-
     return (
         <div>
             <h1>Select</h1>
