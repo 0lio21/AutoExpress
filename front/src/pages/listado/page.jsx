@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Box, Card, CardMedia, CardContent, Typography, MenuItem, Select, InputLabel, FormControl, Container, TextField, Button, Dialog, DialogActions, DialogContent, DialogTitle } from '@mui/material';
 import { useNavigate } from "react-router-dom";
-import data from '../../assets/models/autos.json'; // Importa los datos del JSON directamente
+import data from '/public/listado.json'; // Importa los datos del JSON directamente
 
 function Listado() {
   const [autos, setAutos] = useState(data.autos ||[]); 
@@ -169,10 +169,9 @@ function Listado() {
               <Card sx={{ boxShadow: 3, '&:hover': { boxShadow: 6 } }}>
                 <CardMedia
                   component="img"
-                  height="200"
                   image={auto.imagen}
                   alt={`${auto.marca} ${auto.modelo}`}
-                  style={{ height: '100%' }}
+                  style={{ height: '200px', width: '100%' }}
                 />
                 <CardContent>
                   <Typography variant="h6">
@@ -188,7 +187,7 @@ function Listado() {
                     Año: {auto.año}
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                    Kilometraje: {auto.kilometraje.toLocaleString()} km
+                    Kilometraje: {parseInt(auto.kilometraje)}km
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
                     Ubicación: {auto.ubicacion}
