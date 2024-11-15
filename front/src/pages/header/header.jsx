@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {
   AppBar, Toolbar, Typography, IconButton, Button, Drawer, List, ListItem,
-  ListItemIcon, ListItemText, Divider, Box, InputBase, useMediaQuery, Link as MuiLink
+  ListItemIcon, ListItemText, Divider, Box, InputBase, useMediaQuery
 } from '@mui/material';
 import {
   Menu as MenuIcon, Brightness4 as Brightness4Icon, Brightness7 as Brightness7Icon,
@@ -19,6 +19,12 @@ const Search = styled('div')(({ theme }) => ({
   marginLeft: theme.spacing(2),
   width: 'auto',
 }));
+
+const menuItems = [
+  { text: 'Ofertas', icon: <LocalOfferIcon />, to: '/ofertas' },
+  { text: 'Listado', icon: <DirectionsCarIcon />, to: '/listado' },
+  { text: 'Cotiza tu Auto', icon: <AttachMoneyIcon />, to: '/cotizacion' },
+];
 
 const SearchIconWrapper = styled('div')(({ theme }) => ({
   padding: theme.spacing(0, 2),
@@ -41,7 +47,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-const Header = ({ page, toggleTheme, currentTheme }) => {
+const Header = ({ toggleTheme, currentTheme, page }) => {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
@@ -55,42 +61,45 @@ const Header = ({ page, toggleTheme, currentTheme }) => {
       try {
         const response = await fetch('/public/listado.json');
         const jsonData = await response.json();
-        console.log("Datos cargados:", jsonData); // Verifica los datos
-        setData(jsonData.autos); // Asigna el array directamente
+        setData(jsonData.autos); // Asigna el array de autos directamente
       } catch (error) {
         console.error('Error al cargar el archivo JSON:', error);
       }
     };
-    
+
     fetchData();
   }, []);
+
+  const handleSearchChange = (e) => {
+    const query = e.target.value;
+    setSearchQuery(query);
+
+    if (query.trim() === '') {
+      setSearchResults([]);
+      return;
+    }
+
+    const filteredResults = data.filter((auto) =>
+      auto.marca.toLowerCase().includes(query.toLowerCase())
+    );
+    setSearchResults(filteredResults);
+  };
+
+  const handleResultClick = (id) => {
+    navigate(`/publicacion/${id}`);
+    setSearchQuery('');
+    setSearchResults([]);
+  };
 
   const handleDrawerToggle = () => {
     setDrawerOpen(!drawerOpen);
   };
 
-  const handleSearch = (e) => {
-    e.preventDefault();
-    if (!searchQuery.trim()) return;
-  
-    if (Array.isArray(data)) {
-      const filteredResults = data.filter((item) =>
-        item.name.toLowerCase().includes(searchQuery.toLowerCase())
-      );
-      setSearchResults(filteredResults);
-    } else {
-      console.error("La variable 'data' no es un array:", data);
-    }
-  };
-  
-
   const menuItems = [
-    { text: 'Ofertas', icon: <LocalOfferIcon />, to: '/ofertas' },
+    /* { text: 'Ofertas', icon: <LocalOfferIcon />, to: '/ofertas' }, */
     { text: 'Listado', icon: <DirectionsCarIcon />, to: '/listado' },
     { text: 'Cotiza tu Auto', icon: <AttachMoneyIcon />, to: '/cotizacion' },
   ];
-
-  const additionalItems = ['Tienda', 'Ubicación', 'Soporte Técnico', 'FAQ'];
 
   return (
     <>
@@ -101,24 +110,42 @@ const Header = ({ page, toggleTheme, currentTheme }) => {
           </IconButton>
 
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            <RouterLink to="/" className="text-white" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <RouterLink to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
               Concesionario
             </RouterLink>
           </Typography>
 
-          <form onSubmit={handleSearch} style={{ display: 'inline' }}>
-            <Search>
-              <SearchIconWrapper>
-                <SearchIcon />
-              </SearchIconWrapper>
-              <StyledInputBase
-                placeholder="Buscar…"
-                inputProps={{ 'aria-label': 'search' }}
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-              />
-            </Search>
-          </form>
+          <Search>
+            <SearchIconWrapper>
+              <SearchIcon />
+            </SearchIconWrapper>
+            <StyledInputBase
+              placeholder="Buscar por marca…"
+              inputProps={{ 'aria-label': 'search' }}
+              value={searchQuery}
+              onChange={handleSearchChange}
+            />
+            {searchResults.length > 0 && (
+              <Box sx={{ position: 'absolute', top: '100%', left: 0, width: '100%', background: 'white', zIndex: 2, boxShadow: 1 }}>
+                {searchResults.map((result) => (
+                  <ListItem
+                    key={result.id}
+                    button
+                    onClick={() => handleResultClick(result.id)}
+                    style={{ color: "black" }}
+                  >
+                    <div className='d-flex'>
+                      <img src={result.imagen} alt="" width={100} srcset="" />
+                    <p className='text-center'>
+                      {"ㅤ" + result.marca + " " + result.modelo}
+                    </p>
+                    </div>
+                  
+                  </ListItem>
+                ))}
+              </Box>
+            )}
+          </Search>
 
           {!isSmallScreen && page === 'inicio' && (
             <Box sx={{ display: 'flex', alignItems: 'center', ml: 2 }}>
@@ -148,12 +175,6 @@ const Header = ({ page, toggleTheme, currentTheme }) => {
             <ListItem button component={RouterLink} to={item.to} key={item.text} onClick={handleDrawerToggle}>
               <ListItemIcon>{item.icon}</ListItemIcon>
               <ListItemText primary={item.text} />
-            </ListItem>
-          ))}
-          <Divider />
-          {additionalItems.map((item) => (
-            <ListItem button key={item} onClick={handleDrawerToggle}>
-              <ListItemText primary={item} />
             </ListItem>
           ))}
         </List>
