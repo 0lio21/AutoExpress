@@ -47,28 +47,28 @@ Estas instrucciones te guiarán para obtener una copia de este proyecto en funci
    cd AutoExpress
 
 2. Configura el Backend:
-
-cd Backend
-npm install
+    ```bash
+    cd Backend
+    npm install
 
 3. Configura el Frontend:
-
-cd Front
-npm install
+    ```bash
+    cd Front
+    npm install
 
 ### Scripts Disponibles
 
 # Frontend: Iniciar el servidor de desarrollo:
-
-npm run dev
-
+    ```bash
+    npm run dev
+    ```
 ### Simulación de Datos 📋
 Los datos del proyecto se manejan directamente desde un archivo data.json.
 Este archivo actúa como una base de datos simulada para cargar la información de los automóviles y el inventario.
 
 Ejemplo de estructura del archivo JSON:
-
-[
+    ```bash
+    [
   {
     "id": 1,
     "marca": "Toyota",
