@@ -66,7 +66,8 @@ Estas instrucciones te guiarán para obtener una copia de este proyecto en funci
 Los datos del proyecto se manejan directamente desde un archivo data.json.
 Este archivo actúa como una base de datos simulada para cargar la información de los automóviles y el inventario.
 
-Ejemplo de estructura del archivo JSON:
+Ejemplo de estructura del archivo JSON: 
+
     ```bash
     [
   {
@@ -86,7 +87,7 @@ Ejemplo de estructura del archivo JSON:
     "imagen": "url-del-auto.jpg"
   }
 ]
-
+```
 ### Construido Con 🛠️
 
 ## Frontend:
