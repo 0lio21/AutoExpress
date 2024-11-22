@@ -95,11 +95,11 @@ Vite: Herramienta de construcción rápida y moderna.
 
 JavaScript (ES6+): Lenguaje principal para la lógica y las interacciones.
 
-### Autores ✒️
-# Alejo Cavuto
-# Thiago Vergara
-# Osvaldo Gutierrez
-# Octavio Cichello
+# Autores ✒️
+## Alejo Cavuto
+## Thiago Vergara
+## Osvaldo Gutierrez
+## Octavio Cichello
 
 
 
