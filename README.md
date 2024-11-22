@@ -85,7 +85,7 @@ Ejemplo de estructura del archivo JSON:
     "imagen": "url-del-auto.jpg"
   }
 ]
-```
+
 ### Construido Con 🛠️
 
 ## Frontend:
