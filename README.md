@@ -67,6 +67,7 @@ Los datos del proyecto se manejan directamente desde un archivo data.json.
 Este archivo actúa como una base de datos simulada para cargar la información de los automóviles y el inventario.
 
 Ejemplo de estructura del archivo JSON:
+
 [
   {
     "id": 1,
